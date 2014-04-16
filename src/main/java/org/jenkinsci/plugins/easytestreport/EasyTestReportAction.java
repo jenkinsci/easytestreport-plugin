@@ -12,6 +12,8 @@ import org.kohsuke.stapler.export.ExportedBean;
 @ExportedBean
 public class EasyTestReportAction implements Action {
 
+
+
     public EasyTestReportAction(Run build) {
         // compute(build);
     }

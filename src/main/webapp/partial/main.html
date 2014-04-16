@@ -1,0 +1,26 @@
+<div class="row">
+    <form class="form-inline">
+        <label>Select Project</label> <select ng-model="chosenProject" ng-options="p for p in projects" ng-change="showResults()">
+        </select>
+    </form>
+</div>
+<div class="row">
+
+    <div ng-repeat="project in projectResults" class="panel panel-primary">
+
+        <div class="panel-heading"><h2>{{project.title}}</h2></div>
+        <p>{{project.date | date:'dd-MM-yyyy HH:mm'}}</p>
+        <table class="table">
+        <tr>
+            <th>Test Case</th>
+            <th>Status</th>
+            <th>Duration</th>
+        </tr>    
+        <tr ng-repeat="result in project.results" class="test-{{result.status}}">
+            <td>{{result.name}}</td>
+            <td>{{result.status}}</td>
+            <td>{{result.duration}}</td>
+        </tr>
+        </table>
+    </div>
+</div>

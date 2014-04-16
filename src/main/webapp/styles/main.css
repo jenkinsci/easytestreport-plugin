@@ -1,0 +1,16 @@
+.test-PASSED {
+    background: green;
+
+}
+.test-REGRESSION {
+    background: red;
+}
+.test-FAILED {
+    background: yellow;
+}
+.test-FIXED {
+    background: purple;
+}
+.test-SKIPPED {
+    background: gray;
+}

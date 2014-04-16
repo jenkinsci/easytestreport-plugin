@@ -1,2 +1,2 @@
-esaytestreport-plugin
+easytestreport-plugin
 =====================
